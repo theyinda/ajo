@@ -75,7 +75,7 @@
         </div>
         <div class="exploreOne">
           <div class="imageCon">
-            <img src="../assets/images/exploreThree.svg" />
+            <!-- <img src="../assets/images/exploreThree.svg" /> -->
           </div>
 
           <div class="explore">
