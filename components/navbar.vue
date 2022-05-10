@@ -69,11 +69,9 @@ export default {
   font-size: 20px;
   line-height: 26px;
   margin-right: 30px;
-  /* margin-bottom: 14px; */
   margin: 10px 30px 10px 0px;
   color: #fff;
   text-align: center;
-  /* background: red; */
   align-items: center;
 }
 .logo {
