@@ -2,29 +2,29 @@
   <div class="">
     <div class="topnav" id="myTopnav" ref="myTopnav">
       <div class="logo">
-        <nuxt-link to="#" class="side-nav_item">
+        <nuxt-link to="#" class="">
           <img src="../assets/images/logo.svg" />
         </nuxt-link>
         <div class="line"></div>
       </div>
 
       <div class="doing">
-        <nuxt-link to="/" class="side-nav_item">
+        <nuxt-link to="/" class="">
           <p class="nav-link">Home</p>
         </nuxt-link>
-        <nuxt-link to="#Product" class="side-nav_item">
+        <nuxt-link to="#Product" class="">
           <p class="nav-link">Product</p>
         </nuxt-link>
-        <nuxt-link to="#Contact" class="side-nav_item">
+        <nuxt-link to="#Contact" class="">
           <p class="nav-link">Contact</p>
         </nuxt-link>
       </div>
 
       <div class="details">
-        <nuxt-link to="#started" class="side-nav_item">
+        <nuxt-link to="#started" class="">
           <button class="started">Sign up</button>
         </nuxt-link>
-        <nuxt-link to="#login" class="side-nav_item">
+        <nuxt-link to="#login" class="">
           <button class="login">Login</button>
         </nuxt-link>
       </div>
