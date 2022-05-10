@@ -185,7 +185,7 @@ export default {
 .exploreOne {
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 200px;
   justify-content: space-evenly;
 }
 .exploreOne h3 {
@@ -206,7 +206,7 @@ export default {
 }
 .review-container {
   width: 90%;
-  margin: 40px auto;
+  margin: 200px auto 70px auto;
   max-width: 1440px;
 }
 .review-slides {
@@ -237,7 +237,7 @@ export default {
 }
 .store-container {
   width: 90%;
-  margin: 90px auto 40px auto;
+  margin: 90px auto;
   max-width: 1440px;
   display: flex;
   /* height: 100px; */
@@ -249,7 +249,7 @@ export default {
 }
 .understand-container {
   width: 90%;
-  margin: 60px auto;
+  margin: 60px auto 80px auto;
   max-width: 1440px;
   display: flex;
   height: 100px;
@@ -279,7 +279,7 @@ export default {
 }
 .cities-container {
   width: 90%;
-  margin: 40px auto;
+  margin: 60px auto;
   max-width: 1440px;
   display: flex;
   justify-content: center;
