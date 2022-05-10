@@ -64,7 +64,6 @@ export default {
 .topnav a {
   float: left;
   display: block;
-  /* padding: 14px 0px 0px 0px; */
   text-decoration: none;
   font-weight: 400;
   font-size: 20px;
