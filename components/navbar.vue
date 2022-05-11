@@ -9,13 +9,13 @@
       </div>
 
       <div class="doing">
-        <nuxt-link to="/" class="" >
+        <nuxt-link to="/" class="navv" >
           <p class="nav-link">Home</p>
         </nuxt-link>
-        <nuxt-link to="#Product" class="" exact>
+        <nuxt-link to="#Product" class="navv" exact>
           <p class="nav-link">Product</p>
         </nuxt-link>
-        <nuxt-link to="#Contact" class="" exact>
+        <nuxt-link to="#Contact" class="navv" exact>
           <p class="nav-link">Contact</p>
         </nuxt-link>
       </div>
@@ -68,11 +68,14 @@ export default {
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  margin-right: 30px;
-  margin: 10px 30px 10px 0px;
+  margin-top: 10px;
+  margin: 10px 0px 10px 0px;
   color: #fff;
   text-align: center;
   align-items: center;
+}
+.navv{
+  padding-right: 48px;
 }
 .logo {
  display: flex;
@@ -90,10 +93,11 @@ export default {
 }
 
 .doing {
-  margin-left: 20%;
+  margin-left: 25%;
   width: 400px;
   display: flex;
   justify-content: center;
+  /* background: pink; */
 }
 
 .topnav .icon {
@@ -105,6 +109,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px 0px 10px 0px;
 }
 .sign {
   font-size: 14px;
@@ -122,9 +127,10 @@ export default {
   width: 171px;
   height: 56px;
 }
-.started {
+.details .started {
   background: #fcf300;
   color: #9a9400;
+  margin-right: 14px;
 }
 .login {
   border: 2px solid #fffee6;

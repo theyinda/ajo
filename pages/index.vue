@@ -215,7 +215,7 @@ export default {
   align-items: center;
 }
 .left {
-  padding: 20px;
+  padding: 20px 23px;
   background: #fdf86b;
   border-radius: 50%;
   cursor: pointer;
@@ -288,12 +288,14 @@ export default {
 }
 .city {
   margin-left: 130px;
+  width: 216.85px;
+  height: 260.16px;
 }
 .cities-container p {
   font-weight: 400;
   font-size: 24px;
-  width: 216.85px;
   line-height: 36px;
+  margin-top: 16px;
 }
 
 .footerb {
@@ -329,7 +331,6 @@ export default {
     width: 90%;
     margin: 40px auto;
     max-width: 1440px;
-
   }
   .exploreOne {
     display: block;
@@ -384,16 +385,16 @@ export default {
     display: none;
     margin-top: 0px;
   }
-  .store{
-   width: 100%;
-}
+  .store {
+    width: 100%;
+  }
   .store-container img {
     display: block;
-     width: 50%;
+    width: 50%;
     justify-content: center;
     margin-bottom: 20px;
-     margin: 30px auto;
-     cursor: pointer;
+    margin: 30px auto;
+    cursor: pointer;
     /* margin-left: 0px; */
   }
   .text h3 {
