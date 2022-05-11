@@ -2,29 +2,29 @@
   <div class="">
     <div class="topnav" id="myTopnav" ref="myTopnav">
       <div class="logo">
-        <nuxt-link to="#" class="">
+        <nuxt-link to="#" class="" exact-active-class="">
           <img src="../assets/images/logo.svg" />
         </nuxt-link>
         <div class="line"></div>
       </div>
 
       <div class="doing">
-        <nuxt-link to="/" class="">
+        <nuxt-link to="/" class="" >
           <p class="nav-link">Home</p>
         </nuxt-link>
-        <nuxt-link to="#Product" class="">
+        <nuxt-link to="#Product" class="" exact>
           <p class="nav-link">Product</p>
         </nuxt-link>
-        <nuxt-link to="#Contact" class="">
+        <nuxt-link to="#Contact" class="" exact>
           <p class="nav-link">Contact</p>
         </nuxt-link>
       </div>
 
       <div class="details">
-        <nuxt-link to="#started" class="">
+        <nuxt-link to="#started" class="" exact-active-class="">
           <button class="started">Sign up</button>
         </nuxt-link>
-        <nuxt-link to="#login" class="">
+        <nuxt-link to="#login" class="" exact-active-class="">
           <button class="login">Login</button>
         </nuxt-link>
       </div>
@@ -85,9 +85,10 @@ export default {
 }
 
 /* active */
-a.nuxt-link-exact-active {
+.nuxt-link-exact-active{
   border-bottom: 2px solid #fcf300;
 }
+
 .doing {
   margin-left: 20%;
   width: 400px;
