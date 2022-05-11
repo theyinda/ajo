@@ -244,6 +244,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
 .store-container img {
   margin-left: 26px;
 }
@@ -383,9 +384,16 @@ export default {
     display: none;
     margin-top: 0px;
   }
+  .store{
+   width: 100%;
+}
   .store-container img {
+    display: block;
+     width: 50%;
     justify-content: center;
     margin-bottom: 20px;
+     margin: 30px auto;
+     cursor: pointer;
     /* margin-left: 0px; */
   }
   .text h3 {
