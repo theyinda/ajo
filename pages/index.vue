@@ -88,11 +88,41 @@
         </div>
       </div>
       <div class="review-container">
-        <div class="review-slides">
-          <img src="../assets/images/left.svg" class="left" />
-          <img src="../assets/images/box.svg" />
-          <img src="../assets/images/right.svg" class="left" />
+        <div ref="mySlides" class="review-slides">
+          <img
+            src="../assets/images/left.svg"
+            class="left"
+            @click="PrevSlide(1)"
+          />
+          <div class="content">
+            <div>
+              <img src="../assets/images/mask.svg" />
+            </div>
+
+            <div v-if="clicked % 2 == 0" class="details">
+              <h2>Bernice Semiu</h2>
+              <p>
+                Ajo is very helpful and super easy to use, I had no issues
+                finding local attractions and hot spots.
+              </p>
+            </div>
+            <div v-if="clicked % 2 == 1" class="details">
+              <h2>Jimmy</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+                dolor quis voluptates quos doloremque blanditiis laudantium
+              </p>
+            </div>
+          </div>
+
+          <img
+            src="../assets/images/right.svg"
+            class="left"
+            @click="NextSlide(1)"
+          />
         </div>
+
+
         <div class="more">
           <span>See more reviews</span>
           <img src="../assets/images/arrow.svg" />
@@ -113,7 +143,17 @@ export default {
   name: 'IndexPage',
   components: { navbar, Foot },
   data() {
-    return {}
+    return {
+      clicked: 1,
+    }
+  },
+  methods: {
+    PrevSlide(n) {
+      this.clicked = this.clicked + n
+    },
+    NextSlide(n) {
+      this.clicked = this.clicked + n
+    },
   },
 }
 </script>
@@ -214,6 +254,37 @@ export default {
   justify-content: center;
   align-items: center;
 }
+.content {
+  background: #041a7a;
+  box-shadow: 0px 0px 43px rgba(0, 0, 0, 0.4);
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  column-gap: 26px;
+  width: 40.25rem;
+  margin: 0 99px;
+  padding: 56px 118px 108px 117px;
+}
+details img {
+  width: 80px;
+  height: 80px;
+}
+.details h2 {
+  margin-top: 17px;
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #fff;
+}
+.details p {
+  width: 296px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
+}
 .left {
   padding: 20px 23px;
   background: #fdf86b;
@@ -224,6 +295,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 80px;
 }
 .more span {
   font-weight: 300;
@@ -370,6 +442,9 @@ export default {
     width: 50%;
     margin: 10px auto;
   }
+.content {
+  margin: 0 50px;
+}
 }
 @media only screen and (max-width: 900px) {
   .review-container {

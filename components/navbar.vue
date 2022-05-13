@@ -9,7 +9,7 @@
       </div>
 
       <div class="doing">
-        <nuxt-link to="/" class="navv" >
+        <nuxt-link to="/" class="navv">
           <p class="nav-link">Home</p>
         </nuxt-link>
         <nuxt-link to="#Product" class="navv" exact>
@@ -74,21 +74,21 @@ export default {
   text-align: center;
   align-items: center;
 }
-.navv{
-  padding-right: 48px;
+.topnav .navv {
+  margin-right: 48px;
 }
 .logo {
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.line{
- height: 20px;
- border-right: 1px solid #fffee6;
+.line {
+  height: 20px;
+  border-right: 1px solid #fffee6;
 }
 
 /* active */
-.nuxt-link-exact-active{
+.nuxt-link-exact-active {
   border-bottom: 2px solid #fcf300;
 }
 
@@ -97,7 +97,6 @@ export default {
   width: 400px;
   display: flex;
   justify-content: center;
-  /* background: pink; */
 }
 
 .topnav .icon {
@@ -109,7 +108,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0px;
 }
 .sign {
   font-size: 14px;
@@ -130,7 +129,7 @@ export default {
 .details .started {
   background: #fcf300;
   color: #9a9400;
-  margin-right: 14px;
+  margin-right: 16px;
 }
 .login {
   border: 2px solid #fffee6;
@@ -147,7 +146,7 @@ export default {
   .topnav a.icon {
     float: right;
     display: block;
-     position: absolute;
+    position: absolute;
     right: 0;
     top: 0;
     padding: 14px 16px;
@@ -156,7 +155,7 @@ export default {
     display: block;
     padding: 0;
   }
-  .logo{
+  .logo {
     justify-content: flex-start;
   }
 }
@@ -177,23 +176,21 @@ export default {
     text-align: left;
   }
   .doing {
-  margin-left: 0%;
-  padding-left:4%;
-  justify-content: flex-start;
- 
-}
-
+    margin-left: 0%;
+    padding-left: 4%;
+    justify-content: flex-start;
+  }
 }
 @media screen and (max-width: 500px) {
   .details {
-  display: block;
-}
-.details button {
-  margin-top: 20px;
-  margin-left: 5%;
-}
- .doing {
-  padding-left:8%;
-}
+    display: block;
+  }
+  .details button {
+    margin-top: 20px;
+    margin-left: 5%;
+  }
+  .doing {
+    padding-left: 8%;
+  }
 }
 </style>
